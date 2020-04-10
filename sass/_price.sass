@@ -1,0 +1,137 @@
+.price
+    &-title
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 36px
+        font-weight: 400
+        margin: 101px auto 5px
+        text-align: center
+        &__line
+            width: 31px
+            height: 2px
+            background-color: #23bac1
+            text-align: center
+            margin: 0 auto 43px
+    &-subtitle
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 20px
+        font-weight: 300
+        text-align: center
+        margin-bottom: 79px
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        margin: auto
+        justify-content: space-between
+    &-cart
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 370px
+        height: 680px
+        margin-bottom: 30px
+        position: relative
+        &:after
+            content: ''
+            width: 300px
+            height: 220px
+            position: absolute
+            top: 47px
+            left: 35px
+            background-image: linear-gradient(rgba(11, 14, 14, 0.44))
+        &:hover
+            box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+            &:after
+                width: 0px
+            & > .price-cart__button
+                background-color: lighten(#23bac1, 10%)
+                color: #ffffff
+                border: none
+
+
+        &__line
+            width: 9px
+            height: 2px
+            background-color: #23bac1
+            margin: 0 auto
+            
+        &__title
+            color: #000000
+            font-family: "Proxima Nova-Regular"
+            font-size: 20px
+            font-weight: 400
+            text-align: center
+            margin-bottom: 10px
+            margin-top: 10px
+            
+        &__img1
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price1.jpg')
+        &__img2
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price2.jpg')
+        &__img3
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price3.png')
+        &__img4
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price4.jpg')
+        &__img5
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price5.jpg')
+        &__img6
+            width: 300px
+            height: 220px
+            margin: 0px auto
+            background-image: url('../img/price/price6.jpg')
+
+        &__text
+            color: #000000
+            font-family: "Proxima Nova-Regular"
+            font-size: 16px
+            font-weight: 300
+            line-height: 35px
+            text-align: center
+            width: 370px
+            height: 300px
+            margin-top: 
+        &__text1
+            width: 234px
+            height: 98px
+            color: #000000
+            font-family: "Proxima Nova-Regular"
+            font-size: 16px
+            font-weight: 300
+            line-height: 21px
+            text-align: center
+            margin: 11px auto 191px
+        &__button
+            width: 230px
+            height: 55px
+            border: 1px solid #aeaeae
+            background-color: #ffffff
+            margin: 10px auto 40px
+            font-family: "Proxima Nova-Semibold"
+            font-size: 13px
+            font-weight: 400
+            &:hover
+                background-color: lighten(#23bac1, 10%)
+                cursor: pointer
+                color: #ffffff
+                border: none
+                transform: scale(1.1)
+            &:focus
+                outline: none

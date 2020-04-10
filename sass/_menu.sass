@@ -1,0 +1,40 @@
+.menu
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000,0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    &-btn
+        text-decoration: none
+    &_hidden
+        display: none
+    &_dialog
+        width: 200px
+        height: 255px
+        background-color: #fff
+        margin: 3%
+        position: relative
+        z-index: 99
+    &_close
+        position: absolute
+        top: 3px
+        right: 3px
+    &:hover
+        cursor: pointer
+    &_content
+        position: absolute
+    &-wrap
+        padding-left: 25px
+        &_line
+            margin: 20px auto 20px
+        &__text
+            color: #000000
+            font-family: "Proxima Nova-Regular"
+            font-size: 14px
+            font-weight: 400
+            text-decoration: underline
+            margin: 10px auto 10px
+            &:hover
+                color: #22bac1

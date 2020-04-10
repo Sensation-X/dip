@@ -1,0 +1,722 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/slick.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Дипломный макет</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container header-wrap">
+            <div class="header-btn">
+                <a href="#" id="menu-btn">
+                    <div class="header-btn__img"><img src="img/header/btn.png" alt=""></div>
+                </a>
+                <div class="header-btn__text">МЕНЮ</div>
+            </div>
+            <div class="header-menu">
+                <a class="header-menu__text" href="#main">Главная</a>
+                <a class="header-menu__text" href="#price">Виды макетов</a>
+                <a class="header-menu__text" href="#target">Комплектация макетов</a>
+                <a class="header-menu__text" href="#projects">Реализованные проекты</a>
+                <a class="header-menu__text" href="#customers">Наши клиенты</a>
+                <a class="header-menu__text" href="#footer">Контакты</a>
+            </div>
+            <div class="header-callback">
+                <a class="header-callback__tel" href="tel:+88008913333">8 800 891-33-33</a>
+                <a class="header-callback__call" id="cost-button-header">Заказать обратный звонок</a>
+            </div>
+        </div>
+    </header>
+    <!--/Header-->
+
+    <!--Менюшка-->
+    <div class="menu menu_hidden" id="menu-callback">
+        <div class="menu_dialog">
+            <div class="menu_close">&#10006;</div>
+            <div class="menu_content">
+                <ul class="menu-wrap">
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#main">Главная</a></li>
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#price">Виды макетов</a></li>
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#target">Комплектация макетов</a></li>
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#projects">Реализованные проекты</a></li>
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#customers">Наши клиенты</a></li>
+                    <li class="menu-wrap_line"> <a class="menu-wrap__text" href="#footer">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/Менюшка-->
+
+
+    <!--Форма-->
+    <div class="cost cost_hidden" id="cost-callback">
+        <div class="cost_dialog">
+            <div class="cost_close">&#10006;</div>
+            <div class="cost_content">
+                <div class="cost-form">
+                    <h2 class="cost-form__title">Оставьте заявку и получите<br> расчет стоимость макета<br> в течение <span class="cost-form__title-bold">30 минут</span></h2>
+                    <form action="PHPmailer/mailer/smart.php" method="POST">
+                        <input type="text" name="user_name" class="input input-name cost-form__input" placeholder="Ваше имя" required="required">
+                        <input type="tel" name="user_phone" class="input input-tel cost-form__input" placeholder="Контактный телефон" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required="required">
+                        <input type="email" name="user_email" class="input input-name cost-form__input" placeholder="Электронная почта " required="required">
+                        <button type="submit" class="button cost-form__button" id="form-button-callback"><span>ОСТАВИТЬ ЗАЯВКУ</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/Форма-->
+
+
+    <!--Main-->
+    <div class="main" id="main">
+        <div class="container">
+            <div class="main-wrap">
+                <div class="main-advantages">
+                    <div class="main-advantages__title">
+                        Изготовление макетов любой сложности
+                    </div>
+                    <div class="main-advantages__subtitle">
+                        Продажи. Инвестиции. Имидж.
+                    </div>
+                    <div class="main-advantages__items">
+                        <div class="main-advantages__item">
+                            <div class="main-advantages__img1"></div>
+                            <div class="main-advantages__text">Срок производства<br>от 5 дней</div>
+                        </div>
+                        <div class="main-advantages__item">
+                            <div class="main-advantages__img2"></div>
+                            <div class="main-advantages__text">Гарантии на макеты<br> 24 месяца</div>
+                        </div>
+                        <div class="main-advantages__item">
+                            <div class="main-advantages__img3"></div>
+                            <div class="main-advantages__text">Проектируем, изготавливаем,<br>доставляем и устанавливаем</div>
+                        </div>
+                        <div class="main-advantages__item">
+                            <div class="main-advantages__img4"></div>
+                            <div class="main-advantages__text">Застрахуем, доставим<br>и установим</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-form">
+                    <h2 class="main-form__title">Оставьте заявку и получите<br> расчет стоимость макета<br> в течение <span class="main-form__title-bold">30 минут</span></h2>
+                    <form action="PHPmailer/mailer/smart.php" method="POST">
+                        <input type="text" name="user_name" class="input input-name main-form__input" placeholder="Ваше имя" required="required">
+                        <input type="tel" name="user_phone" class="input input-tel main-form__input" placeholder="Контактный телефон" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required="required">
+                        <input type="email" name="user_email" class="input input-name main-form__input" placeholder="Электронная почта " required="required">
+                        <button type="submit" class="button main-form__button" id="main-button-callback"><span>ОСТАВИТЬ ЗАЯВКУ</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Main-->
+
+    <!--Price-->
+    <div class="price" id="price">
+        <div class="container">
+            <div class="price-title">
+                Виды макетов
+            </div>
+            <div class="price-title__line">
+                <hr>
+            </div>
+            <div class="price-subtitle">Создаем макеты от небольших домов до космических&nbsp;станций</div>
+            <div class="price-wrap">
+                <div class="price-cart">
+                    <div class="price-cart__title">Архитектурные макеты</div>
+                    <div class="price-cart__img1">
+                    </div>
+                    <div class="price-cart__text">
+                        <span>Многоэтажные дома</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Жилые комплексы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Коттеджные поселки</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Торговые комплексы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Бизнес – парки</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Административные здания</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Гостиницы и санатории</span>
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price1"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+                </div>
+                <div class="price-cart">
+                    <div class="price-cart__title">Градостроительные макеты</div>
+                    <div class="price-cart__img2">
+                    </div>
+                    <div class="price-cart__text">
+                        <span>Области</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Города</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Районы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Микрорайоны</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Территории</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Мосты и тоннели</span>
+
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price2"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+                </div>
+
+                <div class="price-cart">
+                    <div class="price-cart__title">Промышленные макеты</div>
+                    <div class="price-cart__img3">
+                    </div>
+                    <div class="price-cart__text">
+                        <span>Предприятия и фабрики</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Энергетические объекты</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Заводы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Научные центры</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Трубопроводы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Производственные линии</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Технологические линии</span>
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price3"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+                </div>
+
+                <div class="price-cart">
+                    <div class="price-cart__title">Интерьерные макеты</div>
+                    <div class="price-cart__img4">
+                    </div>
+                    <div class="price-cart__text">
+                        <span>Квартиры</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Офисы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Коттеджи</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Магазины</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Спортивные комплексы</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Торговые центры</span>
+                        <div class="price-cart__line">
+                            <hr>
+                        </div>
+                        <span>Заводы</span>
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price4"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+
+                </div>
+                <div class=" price-cart ">
+                    <div class="price-cart__title ">Ландшафтные макеты</div>
+                    <div class="price-cart__img5 ">
+                    </div>
+                    <div class="price-cart__text ">
+                        <span>Парки</span>
+                        <div class="price-cart__line ">
+                            <hr>
+                        </div>
+                        <span>Сады</span>
+                        <div class="price-cart__line ">
+                            <hr>
+                        </div>
+                        <span>Горы</span>
+                        <div class="price-cart__line ">
+                            <hr>
+                        </div>
+                        <span>Озера</span>
+                        <div class="price-cart__line ">
+                            <hr>
+                        </div>
+                        <span>Рельефы местности</span>
+                        <div class="price-cart__line ">
+                            <hr>
+                        </div>
+                        <span>Участки</span>
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price5"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+                </div>
+                <div class="price-cart ">
+                    <div class="price-cart__title ">Индивидуальные макеты</div>
+                    <div class="price-cart__img6 ">
+                    </div>
+                    <div class="price-cart__text1 ">
+                        <span>Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией и&nbsp;совершенно любых размеров</span>
+                    </div>
+                    <button type="submit" class="button price-cart__button" id="cost-button-price6"><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--/Price-->
+
+    <!--Projects-->
+    <div class="projects " id="projects">
+        <div class="container ">
+            <div class="projects-title ">
+                Реализованные проекты
+            </div>
+            <div class="projects-title__line ">
+                <hr>
+            </div>
+            <div class="projects-subtitle ">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</div>
+            <div class="projects-wrap ">
+                <div class="slider ">
+                    <div class="slider__item "><img src="img/projects/img1.jpg " alt="фото нашей работы ">
+                        <div class="project-slider ">
+                            <div class="project-title ">Порт Артек</div>
+                            <span class="project-question ">Описание:</span>
+                            <div class="project-subtitle ">Презентация порта Артек для первых лиц государства</div>
+                            <div class="project-items ">
+                                <div class="project-item ">
+                                    <span class="project-question ">Масштаб:</span>
+                                    <span class="project-answer ">1:200</span>
+                                </div>
+                                <div class="project-item ">
+                                    <span class="project-question ">Размер:</span>
+                                    <span class="project-answer ">1000х2000</span>
+                                </div>
+                                <div class="project-item ">
+                                    <span class="project-question ">Срок изготовления:</span>
+                                    <span class="project-answer ">40 дней</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="button project-button" id="cost-button-projects"><span> ЗАКАЗАТЬ МАКЕТ</span></button>
+                        </div>
+                    </div>
+
+                    <div class="slider__item "><img src="img/projects/img2.jpg " alt="фото нашей работы ">
+                        <div class="project-slider ">
+                            <div class="project-title ">Порт Артек</div>
+                            <span class="project-question ">Описание:</span>
+                            <div class="project-subtitle ">Презентация порта Артек для первых лиц государства</div>
+                            <div class="project-items ">
+                                <div class="project-item ">
+                                    <span class="project-question ">Масштаб:</span>
+                                    <span class="project-answer ">1:200</span>
+                                </div>
+                                <div class="project-item ">
+                                    <span class="project-question ">Размер:</span>
+                                    <span class="project-answer ">1000х2000</span>
+                                </div>
+                                <div class="project-item ">
+                                    <span class="project-question ">Срок изготовления:</span>
+                                    <span class="project-answer ">40 дней</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="button project-button" id="cost-button-projects1"><span> ЗАКАЗАТЬ МАКЕТ</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/Projects-->
+
+
+
+    <!--Target-->
+
+    <div class="target " id="target">
+        <div class="container ">
+            <div class="target-title ">
+                Все макеты, изготовленные нашей макетной мастерской, помогли клиентам выполнить поставленные цели, а именно:
+            </div>
+            <div class="target-wrap ">
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img1.png " alt=" "></div>
+                    <span class="target-item__text ">Продать квартиру, дом, <br> участок, объект.</span>.
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img2.png " alt=" "></div>
+                    <span class="target-item__text ">Привлечь инвестиции <br> в проект.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img3.png " alt=" "></div>
+                    <span class="target-item__text ">Наглядно представить объект посетителю с целью ознакомления с территорией, зданием.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img4.png " alt=" "></div>
+                    <span class="target-item__text ">Представить проект <br> первым&nbsp;лицам государства, <br> компании.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img5.png " alt=" "></div>
+                    <span class="target-item__text ">Обучение сотрудников, военнослужащих,  студентов <br> и т.д.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img6.png " alt=" "></div>
+                    <span class="target-item__text ">Получить разрешение <br> на строительство, <br> согласование проекта.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img7.png " alt=" "></div>
+                    <span class="target-item__text ">Бизнес подарок.</span>
+                </div>
+                <div class="target-item ">
+                    <div class="target-item__img "><img src="img/target/img8.png " alt=" "></div>
+                    <span class="target-item__text ">Дополнить интерьер.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/Target-->
+
+    <!--Customers-->
+    <div class="customers " id="customers">
+        <div class="container ">
+            <div class="customers-title ">
+                Наши клиенты
+            </div>
+            <div class="customers-wrap ">
+                <div class="slide ">
+                    <div class="slide__item ">
+                        <div class="slide__img1 "></div>
+                    </div>
+                    <div class="slide__item ">
+                        <div class="slide__img2 "></div>
+                    </div>
+                    <div class="slide__item ">
+                        <div class="slide__img3 "></div>
+                    </div>
+                    <div class="slide__item ">
+                        <div class="slide__img4 "></div>
+                    </div>
+                    <div class="slide__item ">
+                        <div class="slide__img5 "></div>
+                    </div>
+                    <div class="slide__item ">
+                        <div class="slide__img6 "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--/Customers-->
+
+
+    <!--Map-->
+    <div class="map ">
+        <div class="map-wrap ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.72435143171!2d37.53571631622009!3d55.85009798057948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1544965992506 "></iframe>
+        </div>
+    </div>
+    <!--/Map-->
+
+
+    <!--Footer-->
+    <div class="footer " id="footer">
+        <div class="container footer-wrap ">
+            <div class="footer-items ">
+                <div class="footer-items__img "><img src="img/footer/place.png " alt="Значок "></div>
+                <div class="footer-items__text ">
+                    г.Москва <br> Автомоторная улица, 4А, стр.21
+                </div>
+            </div>
+            <div class="footer-callback ">
+                <a class="footer-callback__tel " href="tel:+88008913333 ">8 800 891-33-33</a>
+                <a class="footer-callback__call " id="cost-button-footer">Заказать обратный звонок</a>
+            </div>
+        </div>
+    </div>
+    <!--/Footer-->
+
+    <!--/Скрипт отправки формы-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "PHPmailer/mailer/smart.php",
+                data: $(this).serialize()
+            }).done(function() {
+                $(this).find("input").val("");
+                alert("БОЛЬШОЕ СПАСИБО! Наш менеджер свяжется с Вами в течении 30 минут!");
+                $("form").trigger("reset");
+            });
+            return false;
+        });
+    </script>
+    <!--/Скрипт отправки формы-->
+
+    <!--Скрипт менюшки-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('#menu-btn').on('click', function() {
+                $('#menu-callback').removeClass('menu_hidden');
+                $('#menu-callback').addClass('menu_visible');
+            });
+            $('.menu_close').on('click', function() {
+                $('.menu').removeClass('menu_visible');
+                $('.menu').addClass('menu_hidden');
+            })
+        });
+    </script>
+
+    <!--/Скрипт менюшки-->
+
+    <!--/Скрипт Формы-->
+
+    <script>
+        $(document).ready(function() {
+            $('#cost-button-projects').on('click', function() {
+                $('#cost-callback').removeClass('cost_hidden');
+                $('#cost-callback').addClass('cost_visible');
+            });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-projects1').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price1').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price2').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price3').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price4').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price5').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-price6').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-header').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                    $('.cost').removeClass('cost_visible');
+                    $('.cost').addClass('cost_hidden');
+                }),
+                $('#cost-button-footer').on('click', function() {
+                    $('#cost-callback').removeClass('cost_hidden');
+                    $('#cost-callback').addClass('cost_visible');
+                });
+            $('.cost_close').on('click', function() {
+                $('.cost').removeClass('cost_visible');
+                $('.cost').addClass('cost_hidden');
+            })
+        });
+    </script>
+
+    <!--/Скрипт Формы-->
+
+    <!--Скрипт слайдеров-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                nextArrow: '<div class="arrow arrow_right "></div>',
+                prevArrow: '<div class="arrow arrow_left "></div>'
+            });
+        });
+    </script>
+    <script src="js/slick2.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.slide').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                nextArrow: '<div class="arrow2 arrow2_right "></div>',
+                prevArrow: '<div class="arrow2 arrow2_left "></div>',
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        swipe: true
+                    }
+                }, {
+                    breakpoint: 762,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        swipe: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        swipe: true
+                    }
+                }]
+
+            });
+        });
+    </script>
+    <!--/Скрипт слайдеров-->
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+        ym(51596342, "init", {
+            id: 51596342,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/51596342" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        document.querySelector('#main-button-callback').addEventListener('click', function() {
+            yaCounter51596342.reachGoal('btn-main');
+            return true;
+        })
+    </script>
+    <script>
+        document.querySelector('#form-button-callback').addEventListener('click', function() {
+            yaCounter51596342.reachGoal('btn-form');
+            return true;
+        })
+    </script>
+
+</body>
+
+</html>

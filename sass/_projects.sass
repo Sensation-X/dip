@@ -1,0 +1,109 @@
+.projects
+    background-color: #e8e8e8
+    display: flex
+    &-title
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 36px
+        font-weight: 400
+        margin: 101px auto 5px
+        text-align: center
+        &__line
+            width: 31px
+            height: 2px
+            background-color: #23bac1
+            text-align: center
+            margin: 0 auto 43px
+    &-subtitle
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 20px
+        font-weight: 300
+        text-align: center
+        margin-bottom: 79px
+    &-wrap
+        margin-bottom: 100px
+.project
+    width: 409px
+    &-title
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 53px
+    &-subtitle
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 16px
+        font-weight: 300
+        line-height: 20px
+        margin-bottom: 50px
+        margin-top: 5px
+    &-question
+        color: #7f7f7f
+        font-family: "Proxima Nova-Regular"
+        font-size: 12px
+        font-weight: 300
+        line-height: 20px
+        margin-bottom: 5px
+    &-answer
+        color: #000000
+        font-family: "Proxima Nova-Regular"
+        font-size: 16px
+        font-weight: 300
+        line-height: 20px
+    &-items
+        display: flex
+        justify-content: space-between
+    &-item
+        display: flex
+        flex-direction: column
+    &-button
+        width: 216px
+        height: 60px
+        background-color: #23bac1
+        font-family: "Proxima Nova-Semibold"
+        font-size: 13px
+        font-weight: 400
+        color: #ffffff
+        margin-top: 50px
+        border: none
+        &:hover
+            background-color: lighten(#23bac1, 10%)
+            cursor: pointer
+            transform: scale(1.1)
+        &:focus
+            outline: none       
+
+.slider
+    width: 902px
+    margin: auto
+    &__item
+        width: 902px
+        outline: none
+
+
+        
+.slick
+    &-slide
+        margin: auto
+        img
+            float: left
+            margin-right: 75px
+
+.arrow
+  position: absolute
+  width: 14px
+  height: 26px
+  cursor: pointer
+  &_left
+      background: url("../img/projects/left.png") no-repeat center
+      background-size: 100%
+      left: -14%
+      bottom: 50%
+  &_right 
+      background: url("../img/projects/right.png") no-repeat center
+      background-size: 100%
+      right: -14%
+      bottom: 50%
+      

@@ -1,0 +1,1743 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Proxima Nova-Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova-Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova-Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url("../fonts/ProximaNova-Black.eot");
+  src: url("../fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  height: 710px;
+  opacity: 1;
+  background-image: url("../img/main/bg.png");
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+
+.main-advantages {
+  width: 510px;
+  height: 429px;
+}
+
+.main-advantages__img1 {
+  background-image: url("../img/main/img1.png");
+  width: 35px;
+  height: 35px;
+}
+
+.main-advantages__img2 {
+  background-image: url("../img/main/img2.png");
+  width: 35px;
+  height: 35px;
+}
+
+.main-advantages__img3 {
+  background-image: url("../img/main/img3.png");
+  width: 35px;
+  height: 35px;
+}
+
+.main-advantages__img4 {
+  background-image: url("../img/main/img4.png");
+  width: 35px;
+  height: 35px;
+}
+
+.main-advantages__title {
+  color: #fffafa;
+  font-family: "Proxima Nova-Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 49px;
+}
+
+.main-advantages__title h1 {
+  margin-top: -7px;
+}
+
+.main-advantages__subtitle {
+  color: #fffafa;
+  font-family: "Proxima Nova-Regular";
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 66px;
+}
+
+.main-advantages__text {
+  color: #ffffff;
+  font-family: "Proxima Nova-Regular";
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 25px;
+}
+
+.main-advantages__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.main-form {
+  height: 429px;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  border: 1px solid #ffffff;
+}
+
+.main-form__input {
+  width: 260px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  margin: 0 55px 15px;
+  text-align: center;
+  color: #7c7c7c;
+  font-family: "Proxima Nova-Regular";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.main-form__input:hover {
+  outline-color: #22bac1;
+}
+
+.main-form__title {
+  margin: 40px auto 28px;
+  width: 234px;
+  height: 58px;
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-form__title-bold {
+  font-weight: 700;
+}
+
+.main-form__button {
+  width: 260px;
+  height: 60px;
+  background-color: #23bac1;
+  font-family: "Proxima Nova-Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 5px 55px 43px;
+  border: none;
+}
+
+.main-form__button:hover {
+  background-color: #3bd4dc;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-form__button:focus {
+  outline: none;
+}
+
+.price-title {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 36px;
+  font-weight: 400;
+  margin: 101px auto 5px;
+  text-align: center;
+}
+
+.price-title__line {
+  width: 31px;
+  height: 2px;
+  background-color: #23bac1;
+  text-align: center;
+  margin: 0 auto 43px;
+}
+
+.price-subtitle {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
+  height: 680px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.price-cart:after {
+  content: '';
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 14, 14, 0.44)));
+  background-image: linear-gradient(rgba(11, 14, 14, 0.44));
+}
+
+.price-cart:hover {
+  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+}
+
+.price-cart:hover:after {
+  width: 0px;
+}
+
+.price-cart:hover > .price-cart__button {
+  background-color: #3bd4dc;
+  color: #ffffff;
+  border: none;
+}
+
+.price-cart__line {
+  width: 9px;
+  height: 2px;
+  background-color: #23bac1;
+  margin: 0 auto;
+}
+
+.price-cart__title {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.price-cart__img1 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price1.jpg");
+}
+
+.price-cart__img2 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price2.jpg");
+}
+
+.price-cart__img3 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price3.png");
+}
+
+.price-cart__img4 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price4.jpg");
+}
+
+.price-cart__img5 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price5.jpg");
+}
+
+.price-cart__img6 {
+  width: 300px;
+  height: 220px;
+  margin: 0px auto;
+  background-image: url("../img/price/price6.jpg");
+}
+
+.price-cart__text {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+  width: 370px;
+  height: 300px;
+}
+
+.price-cart__text1 {
+  width: 234px;
+  height: 98px;
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  margin: 11px auto 191px;
+}
+
+.price-cart__button {
+  width: 230px;
+  height: 55px;
+  border: 1px solid #aeaeae;
+  background-color: #ffffff;
+  margin: 10px auto 40px;
+  font-family: "Proxima Nova-Semibold";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.price-cart__button:hover {
+  background-color: #3bd4dc;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.price-cart__button:focus {
+  outline: none;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.menu-btn {
+  text-decoration: none;
+}
+
+.menu_hidden {
+  display: none;
+}
+
+.menu_dialog {
+  width: 200px;
+  height: 255px;
+  background-color: #fff;
+  margin: 3%;
+  position: relative;
+  z-index: 99;
+}
+
+.menu_close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu_content {
+  position: absolute;
+}
+
+.menu-wrap {
+  padding-left: 25px;
+}
+
+.menu-wrap_line {
+  margin: 20px auto 20px;
+}
+
+.menu-wrap__text {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 10px auto 10px;
+}
+
+.menu-wrap__text:hover {
+  color: #22bac1;
+}
+
+.cost {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.cost_hidden {
+  display: none;
+}
+
+.cost_dialog {
+  width: 370px;
+  height: 429px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 99;
+  margin: 165px auto;
+}
+
+.cost_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.cost_close:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.cost-form {
+  height: 429px;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.cost-form__input {
+  width: 260px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  margin: 0 55px 15px;
+  text-align: center;
+  color: #7c7c7c;
+  font-family: "Proxima Nova-Regular";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.cost-form__input:hover {
+  outline-color: #22bac1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cost-form__title {
+  margin: 40px auto 28px;
+  width: 234px;
+  height: 58px;
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cost-form__title-bold {
+  font-weight: 700;
+}
+
+.cost-form__button {
+  width: 260px;
+  height: 60px;
+  background-color: #23bac1;
+  font-family: "Proxima Nova-Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 5px 55px 43px;
+  border: none;
+}
+
+.cost-form__button:hover {
+  background-color: #3bd4dc;
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cost-form__button:focus {
+  outline: none;
+}
+
+.header {
+  height: 64px;
+  -webkit-box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.header-btn {
+  display: none;
+}
+
+.header-btn__img {
+  background-color: #e8e8e8;
+}
+
+.header-btn__text {
+  color: #e8e8e8;
+  font-family: "Proxima Nova-Regular";
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.header-callback__tel {
+  color: #1f1f1f;
+  font-family: "Proxima Nova-Regular";
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+
+.header-callback__tel:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.header-callback__call {
+  color: #22bac1;
+  font-family: "Proxima Nova-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.header-callback__call:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.header-menu {
+  width: 792px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-menu__text {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.header-menu__text:hover {
+  color: #22bac1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.target {
+  background-image: url("../img/target/bg.png");
+}
+
+.target-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1094px;
+  text-align: center;
+}
+
+.target-title {
+  color: #ffffff;
+  font-family: "Proxima Nova-Light";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+  max-width: 675px;
+  padding: 100px 0px 100px 0px;
+  margin: auto;
+}
+
+.target-item {
+  margin: 0px auto 87px auto;
+  width: 250px;
+}
+
+.target-item__img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.target-item__text {
+  color: #ffffff;
+  font-family: "Proxima Nova-Light";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.projects {
+  background-color: #e8e8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects-title {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 36px;
+  font-weight: 400;
+  margin: 101px auto 5px;
+  text-align: center;
+}
+
+.projects-title__line {
+  width: 31px;
+  height: 2px;
+  background-color: #23bac1;
+  text-align: center;
+  margin: 0 auto 43px;
+}
+
+.projects-subtitle {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.projects-wrap {
+  margin-bottom: 100px;
+}
+
+.project {
+  width: 409px;
+}
+
+.project-title {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 53px;
+}
+
+.project-subtitle {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.project-question {
+  color: #7f7f7f;
+  font-family: "Proxima Nova-Regular";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.project-answer {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.project-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-button {
+  width: 216px;
+  height: 60px;
+  background-color: #23bac1;
+  font-family: "Proxima Nova-Semibold";
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 50px;
+  border: none;
+}
+
+.project-button:hover {
+  background-color: #3bd4dc;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.project-button:focus {
+  outline: none;
+}
+
+.slider {
+  width: 902px;
+  margin: auto;
+}
+
+.slider__item {
+  width: 902px;
+  outline: none;
+}
+
+.slick-slide {
+  margin: auto;
+}
+
+.slick-slide img {
+  float: left;
+  margin-right: 75px;
+}
+
+.arrow {
+  position: absolute;
+  width: 14px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.arrow_left {
+  background: url("../img/projects/left.png") no-repeat center;
+  background-size: 100%;
+  left: -14%;
+  bottom: 50%;
+}
+
+.arrow_right {
+  background: url("../img/projects/right.png") no-repeat center;
+  background-size: 100%;
+  right: -14%;
+  bottom: 50%;
+}
+
+.customers-title {
+  color: #000000;
+  font-family: "Proxima Nova-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 100px auto 100px auto;
+  text-align: center;
+}
+
+.customers-wrap {
+  width: 1168px;
+  height: 105px;
+  margin: auto;
+  margin-bottom: 130px;
+}
+
+.slide {
+  outline: none;
+}
+
+.slide__img1 {
+  background-image: url("../img/customers/alfa-bank.png");
+  background-size: 100%;
+  width: 182px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img1:hover {
+  background-image: url("../img/customers/alfa-bank1.png");
+  cursor: pointer;
+}
+
+.slide__img2 {
+  background-image: url("../img/customers/gazprom.png");
+  background-size: 100%;
+  width: 207px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img2:hover {
+  background-image: url("../img/customers/gazprom1.png");
+  cursor: pointer;
+}
+
+.slide__img3 {
+  background-image: url("../img/customers/megafon.png");
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img3:hover {
+  background-image: url("../img/customers/megafon1.jpg");
+  cursor: pointer;
+}
+
+.slide__img4 {
+  background-image: url("../img/customers/mvd.png");
+  background-size: 100%;
+  width: 162px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img4:hover {
+  background-image: url("../img/customers/mwd1.png");
+  cursor: pointer;
+}
+
+.slide__img5 {
+  background-image: url("../img/customers/vtb.png");
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img5:hover {
+  background-image: url("../img/customers/vtb1.png");
+  cursor: pointer;
+}
+
+.slide__img6 {
+  background-image: url("../img/customers/sberbank.png");
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.slide__img6:hover {
+  background-image: url("../img/customers/sberbank1.png");
+  cursor: pointer;
+}
+
+.slide__item {
+  outline: none;
+}
+
+.arrow2 {
+  position: absolute;
+  width: 14px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.arrow2_left {
+  background: url("../img/customers/left.png");
+  background-size: 100%;
+  left: -8%;
+  bottom: 35%;
+}
+
+.arrow2_right {
+  background: url("../img/customers/right.png");
+  background-size: 100%;
+  right: -8%;
+  bottom: 35%;
+}
+
+.map-wrap {
+  height: 416px;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 416px;
+  border: 0px;
+  position: relative;
+}
+
+.footer {
+  height: 146px;
+  background-color: #191919;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  padding-bottom: 58;
+}
+
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-items__text {
+  height: 30px;
+  color: #ffffff;
+  font-family: "Proxima Nova-Regular";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer-items__img {
+  margin-right: 20px;
+}
+
+.footer-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.footer-callback__tel {
+  color: #ffffff;
+  font-family: "Proxima Nova-Regular";
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+
+.footer-callback__tel:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-callback__call {
+  color: #22bac1;
+  font-family: "Proxima Nova-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.footer-callback__call:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova-Light", sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+hr {
+  border: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 97%;
+  }
+  .header-menu {
+    width: 70%;
+  }
+  .customers-wrap {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1167px) {
+  .project-title {
+    text-align: center;
+  }
+  .project-button {
+    margin: 40px 0px 10px 100px;
+  }
+  .slider {
+    width: 409px;
+  }
+  .slider-item {
+    width: 409px;
+  }
+  .slick-slide img {
+    margin: auto;
+    float: bottom;
+    margin-bottom: 50px;
+  }
+  .arrow_right {
+    right: -20%;
+  }
+  .arrow_left {
+    left: -20%;
+  }
+}
+
+@media (max-width: 1144px) {
+  .price-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide__img1 {
+    background-image: url("../img/customers/alfa-bank1.png");
+  }
+  .slide__img2 {
+    background-image: url("../img/customers/gazprom1.png");
+  }
+  .slide__img3 {
+    background-image: url("../img/customers/megafon1.jpg");
+  }
+  .slide__img4 {
+    background-image: url("../img/customers/mwd1.png");
+  }
+  .slide__img5 {
+    background-image: url("../img/customers/vtb1.png");
+  }
+  .slide__img6 {
+    background-image: url("../img/customers/sberbank1.png");
+  }
+  .price-cart:after {
+    width: 0px;
+  }
+  .price-cart__button {
+    background-color: #23bac1;
+    color: #ffffff;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-advantages__title {
+    line-height: 38px;
+    margin-bottom: 14px;
+  }
+  .main-advantages__subtitle {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 762px) {
+  .customers-title {
+    margin: 30px auto 30px auto;
+  }
+  .customers-wrap {
+    margin-bottom: 30px;
+  }
+  .target-title {
+    padding: 25px 0px 50px 0px;
+    max-width: 456px;
+  }
+  .target-wrap {
+    max-width: 500px;
+  }
+  .projects-title {
+    margin-top: 35px;
+  }
+  .projects-title__line {
+    margin-bottom: 14px;
+  }
+  .projects-subtitle {
+    width: 290px;
+    margin: 0px auto 10px;
+  }
+  .projects-wrap {
+    margin-bottom: 0px;
+  }
+  .price-title {
+    margin-top: 30px;
+    font-size: 33px;
+  }
+  .price-title__line {
+    margin-bottom: 10px;
+  }
+  .price-subtitle {
+    margin-bottom: 20px;
+  }
+  .price-cart {
+    height: 650px;
+  }
+  .price-cart__title {
+    margin-bottom: 12px;
+    margin-top: 11px;
+  }
+  .price-cart__text {
+    margin-bottom: 15px;
+  }
+  .price-cart__text1 {
+    margin-bottom: 20px;
+  }
+  .main {
+    height: 930px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-advantages {
+    width: 372px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .slider {
+    width: 300px;
+  }
+  .project {
+    width: 300px;
+  }
+  .project-button {
+    margin: 30px 0px 10px 50px;
+  }
+  .slick-slider {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media (max-width: 515px) {
+  .target-title {
+    padding: 25px 0px 40px 0px;
+    max-width: 310px;
+    font-size: 20px;
+  }
+  .target-item {
+    margin-bottom: 30px;
+  }
+  .target-item__img {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .footer-callback {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-wrap {
+    height: 555px;
+  }
+  .arrow_right {
+    right: -10%;
+  }
+  .arrow_left {
+    left: -10%;
+  }
+  .slick-slider {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    top: -8%;
+  }
+  .main {
+    height: 870px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .main-advantages {
+    width: 300px;
+    height: 380px;
+    margin-bottom: 15px;
+  }
+  .main-advantages__title {
+    font-size: 24px;
+  }
+  .main-advantages__subtitle {
+    font-size: 16px;
+  }
+  .main-form {
+    width: 300px;
+  }
+  .main-form__button {
+    width: 200px;
+  }
+  .main-form__input {
+    width: 200px;
+  }
+  .cost_dialog {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .cost-form {
+    width: 300px;
+  }
+  .cost-form__button {
+    width: 200px;
+  }
+  .cost-form__input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 321px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
